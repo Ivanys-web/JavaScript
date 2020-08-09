@@ -1,0 +1,21 @@
+<html>
+<script>
+function task3() {
+  var size = 10;
+  var symbol = '#';
+  var result = '\n';
+  
+  for (var line = 1; line <= size; line++) {
+    for (var elem = 1; elem <= size; elem++) {
+      if (line % 2 == elem % 2) {
+        result += symbol; 
+      } else {
+        result += ' ';
+      }
+    }
+    result +='\n';
+  }
+  console.log(result);
+};
+</script>
+</html>

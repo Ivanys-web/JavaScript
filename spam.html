@@ -1,0 +1,21 @@
+<html>
+<script>
+function task6() {
+  function checkSpam(str) {
+    str = str.toLowerCase();
+    var spam = ['sex', 'spam'];
+   
+    for(var i = 0; i < spam.length; i++) {
+      if (str.indexOf(spam[i]) !== -1) {
+        return true;
+      }
+    }
+    return false;
+  }  
+ 
+  console.log(checkSpam('получить новые секс-видео')); 
+  console.log(checkSpam('[СПАМ] Как быстро заработать?')); 
+  console.log(checkSpam('Новый шаблон PSD')); 
+}
+</script>
+</html>

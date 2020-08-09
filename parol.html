@@ -1,0 +1,23 @@
+<html>
+<script>
+let userName = prompt("Кто вы?", '');
+
+if (userName == 'Admin') {
+
+  let pass = prompt('Пароль?', '');
+
+  if (pass == 'passw0rd') {
+    alert( 'Добро пожаловать домой!' );
+  } else if (pass == '' || pass == null) {
+    alert( 'Отменено' );
+  } else {
+    alert( 'Доступ запрещен' );
+  }
+
+} else if (userName == '' || userName == null) {
+  alert( 'Отменено' );
+} else {
+  alert( "Неверный логин" );
+}
+</script>
+</html>
