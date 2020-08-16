@@ -1,0 +1,19 @@
+<html>
+<script>
+function sortByAge(arr) {
+  arr.sort((a, b) => a.age > b.age ? 1 : -1);
+}
+let vasya = { name: 'Вася', age: 23 };
+let masha = { name: 'Маша', age: 18 };
+let vovochka = { name: 'Вовочка', age: 6 };
+
+let arr = [ vasya , masha , vovochka ];
+
+sortByAge(arr);
+
+// теперь отсортировано: [vasya, masha, petya]
+alert(arr[0].name); // Вася
+alert(arr[1].name); // Маша
+alert(arr[2].name); // Вовочка
+</script>
+</html>
