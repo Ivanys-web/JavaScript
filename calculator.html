@@ -1,0 +1,16 @@
+<html>
+<script>
+(function() {
+  var heap = [],
+      tmp;
+
+  do{
+    tmp = prompt('Введите число', '');
+    if(tmp === '' || tmp === null || isNaN(tmp)) break;
+    heap.push(+tmp);
+  }while(true);
+
+  alert(heap.reduce((a, e) => a + e));
+})();
+</script>
+</html>
