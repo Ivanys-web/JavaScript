@@ -1,0 +1,16 @@
+<html>
+ <meta charset="UTF-8">
+    <title>массив arrSorted — из тех же элементов, но отсортированный.</title>
+</head>
+<body>
+<script>
+var arr = ['HTML', 'JavaScript', 'CSS'];
+
+var arrSorted = [];
+        arrSorted = arr.slice().sort();
+        arrSorted.sort();
+
+alert( arrSorted ); // CSS, HTML, JavaScript
+alert( arr ); // HTML, JavaScript, CSS (без изменений)
+</script>
+</html>
